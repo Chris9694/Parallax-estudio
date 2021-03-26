@@ -11,7 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
-</head>
+
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="embed360.js"></script>
+  </head>
 <body>
     <div class="main_container">
         <header>
@@ -42,7 +45,7 @@
             </p>
           </div>
           <div class="c1_image">
-            <img src="images/1.jpg" alt="1">
+            <img src="images/1_360.jpg" alt="1">
           </div>
         </div>
 
@@ -90,13 +93,40 @@
 
 
         <div id="contacto" class="content4">
+          <div class="c4_text">
+            <h1>Contáctanos</h1>
+          </div>
 
-        </div>
-
+          <div class="c4_form">
+            <form action="https://formsubmit.co/parallaxestudio.360@gmail.com" method="POST" >
+              <div class="form-group">
+                <label for="Nombre">Nombre</label>
+                <input type="text" id="Nombre" name="Nombre">
+              </div>
+  
+              <div class="form-group">
+                <label for="Apellido">Apellido</label>
+                <input type="text" id="Apellido" name="Apellido">
+              </div>
+  
+              <div class="form-group">
+                <label for="Email">E-mail</label>
+                <input type="text" id="Email" name="Email">
+              </div>
+  
+              <div class="form-group">
+                <label for="Mensaje">Mensaje</label>
+                <textarea name="Mensaje" id="Mensaje" cols="30" rows="10"></textarea>
+              </div>
+  
+              <button class="b_contact" type="submit">Enviar</button>
+            </form>
 
         <footer>Footer</footer>
     </div>
 
-    
+    <script>
+      embed360('.c1_image');
+    </script>
 </body>
 </html>
